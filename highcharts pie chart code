@@ -1,0 +1,73 @@
+Highcharts.chart('container', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+  },
+  title: {
+    text: 'Amount of Women Enrolled at UCSD Over Time'
+  },
+  tooltip: {
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: true,
+        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+      }
+    }
+  },
+  series: [{
+    name: 'Amount',
+    colorByPoint: true,
+    data: [{
+      name: '2005',
+      y: 2113,
+      sliced: true,
+      selected: true
+    }, {
+      name: '2006',
+      y: 2558
+    }, {
+      name: '2007',
+      y: 2303
+    }, {
+      name: '2008',
+      y: 2399
+    }, {
+      name: '2009',
+      y: 2054
+    }, {
+      name: '2010',
+      y: 2089
+    }, {
+      name: '2011',
+      y: 1861
+    }, {
+      name: '2012',
+      y: 2245
+    }, {
+      name: '2013',
+      y: 2612
+    }, {
+      name: '2014',
+      y: 2383
+    }, {
+      name: '2015',
+      y: 2581
+    }, {
+      name: '2016',
+      y: 3077
+    }, {
+      name: '2017',
+      y: 2974
+    }, {
+      name: '2018',
+      y: 3484
+    }]
+  }]
+});
